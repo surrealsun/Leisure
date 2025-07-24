@@ -1,0 +1,135 @@
+.carousel-container1 {
+  position: relative;
+  margin-top: 50px;
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-image {
+  flex: 0 0 28.57vw;
+  height: 100%;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-button:hover {
+  opacity: 0.5;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-container1 {
+  position: relative;
+  margin-top: 50px;
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  flex: 0 0 28.57vw;
+  height: 100%;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .carousel-container1 {
+    height: 400px;
+  }
+
+  .carousel-image {
+    flex: 0 0 40vw;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .carousel-container1 {
+    height: 280px;
+  }
+
+  .carousel-image {
+    flex: 0 0 80vw;
+  }
+
+  .carousel-button {
+    font-size: 2rem;
+    padding: 8px 12px;
+  }
+}

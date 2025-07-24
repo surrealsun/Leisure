@@ -1,0 +1,175 @@
+.vid-section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .vid-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .vid-content h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 40px;
+  }
+
+  .h1-name
+  {
+    margin-top: 20vh;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+  }
+  .included-section {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    justify-content: space-between;
+    padding: 80px 60px;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 200px;
+  }
+  
+  .included-text {
+    flex: 1 1 45%;
+    max-width: 500px;
+  }
+  
+  .included-text h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .included-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .included-text ul {
+    padding-left: 18px;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .included-text li {
+    margin-bottom: 10px;
+    list-style: disc;
+    color: #333;
+
+  }
+  
+  .included-images {
+    position: relative;
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .included-images .image.small {
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 2;
+  }
+  
+  .included-images .image.large {
+    width: 460px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .included-section {
+      flex-direction: column;
+      padding: 60px 30px;
+      margin-left: 0vw;
+    }
+  
+    .included-images {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .included-images .image.small {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .included-images .image.large {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .included-text h2 {
+      font-size: 22px;
+    }
+    
+    .included-section{
+      margin-left: 0vw;
+    }
+  
+    .included-text p,
+    .included-text li {
+      font-size: 14px;
+    }
+  
+    .included-images .image.small,
+    .included-images .image.large {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+  .img-1
+  {
+    position: relative;
+    left: 250px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 480px) {
+    #h1-middle {
+      position: relative;
+      font-size: 2rem;
+      left: 10px;
+    }
+  
+  
+    
+  }

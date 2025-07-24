@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+.payment-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  color: #333;
+
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  display: block;
+}
+
+.method-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.method-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.method-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.method-btn.active {
+  background-color: #b89e77;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.upi-section input,
+.wallet-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.payment-header h1 {
+  font-size: 36px;
+  color: #3a2e2a;
+}
+
+.payment-header p {
+  font-size: 18px;
+  color: #c79d63;
+}
+
+.payment-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.booking-summary {
+  flex: 1 1 45%;
+  background-color: #fcf8f0;
+
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.booking-summary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #7b5c3f;
+}
+
+.booking-summary p {
+  margin-bottom: 10px;
+}
+
+.payment-form {
+  flex: 1 1 45%;
+  background-color: #fcf8f0;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #3a2e2a;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 15px;
+  color: #555;
+}
+
+.package-card {
+  height: 480px;
+  /* fixed height similar to RegionCarousel */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-card img {
+  height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-details {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-details p {
+  flex-grow: 1;
+}
+
+
+.payment-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 6px;
+  font-family: 'Georgia', serif;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row label {
+  flex: 1;
+}
+
+.pay-btn {
+  background-color: #c4a77d;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #a3865d;
+}

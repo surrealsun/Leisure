@@ -1,0 +1,23 @@
+
+
+.text1 {
+    margin-top: 20vh;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .text1 {
+      font-size: 1.5rem;
+      margin-top: 6vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text1 {
+      font-size: 1.4rem;
+      margin-top: 10vh;
+      font-weight: 500;
+    }
+  }
+  

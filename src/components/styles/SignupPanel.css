@@ -1,0 +1,178 @@
+/* SignupPanel.css */
+.signup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .signup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .signup-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    padding: 40px 30px;
+    overflow-y: auto;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .signup-panel.active {
+    transform: translateX(0);
+  }
+  
+  .signup-panel .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-panel h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+  }
+  
+  .signup-panel .back-link {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .social-login .icon {
+    font-size: 28px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .disclaimer {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .disclaimer a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .or-divider {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+    content: "";
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+  }
+  
+  .or-divider::before { left: 0; }
+  .or-divider::after { right: 0; }
+  
+  .signup-panel form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-panel label {
+    font-size: 12px;
+    margin: 10px 0 5px;
+    color: #111;
+  }
+  
+  .signup-panel input[type="text"],
+  .signup-panel input[type="email"],
+  .signup-panel input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .privacy-info {
+    font-size: 10px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .privacy-info a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .privacy-info label {
+    font-size: 11px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .signup-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    margin: 25px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .login-cta {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-cta button {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    background: none;
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  

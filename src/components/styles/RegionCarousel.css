@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.carousel-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+  }
+  
+  .luxury-book-btn {
+    background-color: #d2a567;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .luxury-book-btn:hover {
+    background-color: #a3865d;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #111;
+    font-weight: 500;
+  }
+  
+  .region-buttons {
+    margin-bottom: 30px;
+  }
+  
+  .region-btn {
+    margin: 0 10px;
+    padding: 8px 18px;
+    background: transparent;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .region-btn.active {
+    background-color: #111;
+    color: white;
+    border-color: #111;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0px;
+    justify-items: center;
+  }
+  
+  .journey-card {
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .journey-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .journey-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 380px;
+  }
+  
+  .caption {
+    padding: 15px;
+    color: #333;
+  }
+  
+  .caption h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .caption p {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 300;
+  }
+  

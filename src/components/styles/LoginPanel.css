@@ -1,0 +1,311 @@
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.login-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.error-text {
+  color: crimson;
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+
+.reset-password-container {
+  padding: 30px;
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  
+}
+
+.reset-password-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.reset-password-container label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.reset-password-container input[type="email"],
+.reset-password-container input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.reset-password-container .error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.reset-password-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.reset-password-container button:hover {
+  background-color: #333;
+}
+
+.reset-password-container .back-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+x
+
+
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: #444;
+}
+
+.policy-text {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.policy-text a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+.checkbox-container input[type='checkbox'] {
+  margin-top: 0.2rem;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.checkbox-container label {
+  font-size: 0.78rem;
+  position: relative;
+  bottom: 15px;
+
+  line-height: 1.4;
+  color: #333;
+}
+
+.info-icon {
+  font-size: 0.75rem;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+form input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 1px black;
+  transition: all 0.3s ease;
+}
+
+
+.login-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 400px;
+  max-width: 100%;
+  background: white;
+  z-index: 1000;
+  padding: 2rem;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease;
+  overflow-y: auto;
+}
+
+.login-panel.active {
+  right: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-login {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+form input {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+}
+
+.forgot {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #000000;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.forgot:hover {
+  transform: scale(1.01);
+  color: black;
+}
+
+.login-btn {
+  margin-top: 1rem;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.login-btn:hover {
+  scale: 1.03;
+  transition: 0.4s;
+  background: rgba(0, 0, 0, 0.881);
+
+}
+
+.signup-cta {
+  text-align: center;
+  margin-top: 2rem;
+
+}
+
+.signup-btn {
+  border: 1px solid black;
+  padding: 0.7rem 1.2rem;
+  margin-top: 10px;
+  background: white;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+.signup-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: 0.6s;
+
+}
+
+@media (max-width: 600px) {
+  .login-panel {
+    width: 100%;
+    padding: 1.2rem;
+  }
+}

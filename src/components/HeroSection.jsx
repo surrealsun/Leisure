@@ -1,5 +1,4 @@
 import React from 'react';
-import backgroundVideo from '/homepage-vid-loop1.webm';
 import './styles/Herosection.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -14,7 +13,7 @@ const HeroSection = () => {
         muted
         playsInline
       >
-        <source src={backgroundVideo} type="video/webm" />
+        <source src='/homepage-vid-loop1.webm' type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <div className="hero-content">

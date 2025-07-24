@@ -1,6 +1,5 @@
 import LoopingCarousel from '../components/Destination/LoopingCarousel';
 import '../styles/Destinations.css';
-import backgroundVideo from '/destination-bg-vid.mp4';
 
 import { motion } from 'framer-motion';
 
@@ -17,7 +16,7 @@ const Destinations = () => {
                muted
                playsInline
              >
-               <source src={backgroundVideo} type="video/webm" />
+               <source src='/destination-bg-vid.mp4' type="video/webm" />
                Your browser does not support the video tag.
              </video>
         <div className="vid-content">

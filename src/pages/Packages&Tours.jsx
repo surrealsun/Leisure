@@ -1,5 +1,4 @@
 import RegionCarousel from "../components/Packages&Tour/RegionCarousel";
-import backgroundVideo from '/pack-back.webm';
 import '../styles/PackagesandTours.css'
 
 import { motion } from 'framer-motion';
@@ -15,7 +14,7 @@ const Packages = () => {
           muted
           playsInline
         >
-          <source src={backgroundVideo} type="video/webm" />
+          <source src="/pack-back.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
         <div className="img-content3">

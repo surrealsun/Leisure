@@ -1,5 +1,4 @@
 import '../styles/Suitsandvillas.css'
-import Video from '/background-video.mp4'
 import LuxuryCarousel from '../components/Suits&Villas/LuxuryCarousel';
 import { motion } from 'framer-motion';
 
@@ -15,7 +14,7 @@ const SuitsandVillas = () => {
                     muted
                     playsInline
                 >
-                    <source src={Video} type="video/webm" />
+                    <source src='/background-video.mp4' type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="vid-content">
